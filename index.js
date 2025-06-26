@@ -84,5 +84,9 @@ const cars = [
     });
   });
 
+// Adds the current year to the span tag in the footer
+const yearFooter = document.getElementById("year-footer"); 
+yearFooter.textContent = new Date().getFullYear();
+
 
 
