@@ -88,5 +88,17 @@ const cars = [
 const yearFooter = document.getElementById("year-footer"); 
 yearFooter.textContent = new Date().getFullYear();
 
+/* AI-powered chatbot (powered by GPT-4o Mini): assist user with cars in
+general and our 4 car brands*/
+(function(){if(!window.chatbase||window.chatbase("getState")
+  !=="initialized"){window.chatbase=(...arguments)=>
+  {if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};
+  window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q")
+  {return target.q}return(...args)=>target(prop,...args)}})}
+  const onLoad=function(){const script=document.createElement("script");
+  script.src="https://www.chatbase.co/embed.min.js";script.id="VoR15J0EBHL7ZW3yBuKEJ";
+  script.domain="www.chatbase.co";document.body.appendChild(script)};
+  if(document.readyState==="complete")
+  {onLoad()}else{window.addEventListener("load",onLoad)}})();
 
 
