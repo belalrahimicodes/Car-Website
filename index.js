@@ -88,7 +88,7 @@ const cars = [
 const yearFooter = document.getElementById("year-footer"); 
 yearFooter.textContent = new Date().getFullYear();
 
-/* AI-powered chatbot (powered by GPT-4o Mini): assist user with cars in
+/* AI-powered chatbot (GPT-4o Mini): assist user with cars in
 general and our 4 car brands*/
 (function(){if(!window.chatbase||window.chatbase("getState")
   !=="initialized"){window.chatbase=(...arguments)=>
